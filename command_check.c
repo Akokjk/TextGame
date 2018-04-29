@@ -1,7 +1,7 @@
 #include "prototypes.h"
 #define NUM_OF_COMMANDS 1 
 
-#define COMMAND(x) (command)(x)
+#define COMMAND(x) ("command")(x)
 
 	
 //to avoid unnessary function prototpye creating marcos the commmand_check function is at the botttom 
