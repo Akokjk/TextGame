@@ -1,6 +1,6 @@
 #define NUM_OF_COMMANDS 1 
 
-#define COMMAND(x)  ("command"(x)) //I don't know if this will work
+#define COMMAND(x)  (command(x)) //I don't know if this will work
 
 //to avoid unnessary function prototpye creating marcos the commmand_check function is at the botttom 
 
