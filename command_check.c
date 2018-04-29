@@ -1,7 +1,10 @@
 #include "prototypes.h"
 #define NUM_OF_COMMANDS 1 
 
-#define COMMAND(x) ("command")(x)
+#define COMMAND(x) \
+char* result; \ 
+sprintf (result, "command%d", x); \
+return &(#result) \ 
 
 	
 //to avoid unnessary function prototpye creating marcos the commmand_check function is at the botttom 
@@ -27,7 +30,7 @@ void command_check(char* input)
 	}
 	else {
 		//This is probably one of the funnest things in c 
-		void (*command_ptr)(char*) = &(COMMAND(check)); //generates a function pointer address using the macro 
+		void (*command_ptr)(char*) = COMMAND(check); //generates a function pointer address using the macro 
 		(*command_ptr)(input); //Runs the function with the user input 
 	}
 	
