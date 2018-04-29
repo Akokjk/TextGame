@@ -1,10 +1,10 @@
 #define NUM_OF_COMMANDS 1 
 
-#define COMMAND(x)  &command(x) //I don't know if this will work
+#define COMMAND(x)  ("command"(x)) //I don't know if this will work
 
 //to avoid unnessary function prototpye creating marcos the commmand_check function is at the botttom 
 
-command0(char* input){ //help command 
+void command0(char* input){ //help command 
 	printf("You have accesssed the help function.\n"); 
 }
 
@@ -25,8 +25,8 @@ void command_check(char* input)
 	}
 	else {
 		//This is probably one of the funnest things in c 
-		void (*command_ptr)(char*) = COMMAND(check); //generates a function pointer address using the macro 
-		(*command_ptr)(char* input); //Runs the function with the user input 
+		void (*command_ptr)(char*) = &COMMAND(check); //generates a function pointer address using the macro 
+		(*command_ptr)(input); //Runs the function with the user input 
 	}
 	
 }
