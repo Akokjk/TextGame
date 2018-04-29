@@ -1,3 +1,4 @@
+#include "prototypes.h"
 #define NUM_OF_COMMANDS 1 
 
 #define COMMAND(x) command ## x
