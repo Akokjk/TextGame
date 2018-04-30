@@ -3,7 +3,7 @@
 
 
 	
-void help_com(char* input){ //help command
+void help_com(char input[MAXBYTES]){ //help command
 	printf("You have accesssed the help function.\n Hizzah!\n");
 }
 
@@ -20,7 +20,7 @@ int get_command(int value)
 
 }
 
-void command_check(char* input)
+void command_check(char input[MAXBYTES])
 {
 	//This will check to see if the input matches any possible command
 	char* commands[NUM_OF_COMMANDS] = {"help"};

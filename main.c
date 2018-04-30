@@ -1,6 +1,6 @@
 #include "prototypes.h" 
 
-#define MAXBYTES 80
+
 
 int main(int argc, char *argv[])
 {
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
             FD_ZERO(&readfds);
             FD_SET(fileno(stdin), &readfds);
 
-            tv.tv_sec = 999999999; //wait time
+            tv.tv_sec = 9999999; //wait time
             tv.tv_usec = 0;
 
             printf("> ");
