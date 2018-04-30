@@ -25,9 +25,10 @@ void command_check(char input[MAXBYTES])
 	//This will check to see if the input matches any possible command
 	char* commands[NUM_OF_COMMANDS] = {"help"};
 	int i;
+	char* finput = strtok(input, " \n"); 
 	int check = -1;
 	for (i = 0; i < NUM_OF_COMMANDS; i++){
-		if (strcmp(commands[i], strtok(input, " ")) == 0){ //looks at frist word in the input 
+		if (strcmp(commands[i], finput) == 0){ //looks at frist word in the input 
 			check = i;
 			break;
 		}
