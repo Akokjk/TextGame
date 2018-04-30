@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
                             exit(1);
                     }
                     command_check(buf); 
-                    //printf("\nRead %d bytes\n", num_bytes);
+                    //printf("Input buffer: %s\n", buf);
                     break; /* to terminate loop, since I don't process anything */
             }
     }
