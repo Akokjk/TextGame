@@ -9,10 +9,9 @@
 #include <unistd.h>
 #include <string.h>
 #include <errno.h>
-
+#define MAXBYTES 80
 #include "command_check.c"
 
-#define MAXBYTES 80
 
 void command_check(char* input); //This might have to return updated player information based off what the command accoplished
 
