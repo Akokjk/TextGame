@@ -51,6 +51,25 @@ typedef struct{
 	
 }player_effects; 
 
+typedef struct{
+	//location x y z 
+	//items: type, name, description   
+	//hp 
+	//status or effects on the player 
+	//hungry, sick, sleepy, bleeding, encumbered 
+	//stance this will change player height 
+	char name[MAXBYTES]; 
+	int weight; 
+	location player_location; 
+	//inventory needs to dynmaically allocated 
+	item inventory[MAX_INVENTORY]; //this might increase if you get a backpack or something
+	unsigned int health; 
+	player_effects player_status[NUM_EFFECTS]; 
+}player; 
+
+
+player player1; 
+
 
 
 void GeneratePlayerData(); 
