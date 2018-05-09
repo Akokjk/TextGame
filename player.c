@@ -2,7 +2,7 @@
 #include "prototypes.h" 
 #define BASE_WEIGHT 0 
 
-
+player player1; 
 
 void GeneratePlayerData(){
 	//This can loaded in from a file or something if you want to save or whatever 

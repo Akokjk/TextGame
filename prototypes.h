@@ -46,7 +46,7 @@ typedef struct{
 
 typedef struct{
 	//This is going to happen later on 
-	char** type = {"Sick", "Sleepy", "Hungry", "Encumbered", "Bleeding", "Content"};
+	char* type[NUM_EFFECTS] = {"Sick", "Sleepy", "Hungry", "Encumbered", "Bleeding", "Content"};
 	int id; 
 	
 }player_effects; 
