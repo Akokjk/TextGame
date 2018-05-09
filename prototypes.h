@@ -51,7 +51,7 @@ typedef struct{
 	
 }player_effects; 
 
-typedef struct{
+struct player{
 	//location x y z 
 	//items: type, name, description   
 	//hp 
@@ -65,10 +65,10 @@ typedef struct{
 	item inventory[MAX_INVENTORY]; //this might increase if you get a backpack or something
 	unsigned int health; 
 	player_effects player_status[NUM_EFFECTS]; 
-}player; 
+}
 
+player *player1; 
 
-player player1; 
 
 
 

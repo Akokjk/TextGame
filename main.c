@@ -1,4 +1,4 @@
-#include "prototypes.h" 
+#include "prototypes.h"
 
 
 
@@ -46,11 +46,11 @@ int main(int argc, char *argv[])
                             fprintf(stderr, "\nError on read : %s\n", strerror(errno));
                             exit(1);
                     }
-                    command_check(buf); 
-					GeneratePlayerData(); 
+                    command_check(buf);
+					GeneratePlayerData();
                     //printf("Input buffer: %s\n", buf);
                     break; /* to terminate loop, since I don't process anything */
-					
+
             }
     }
 
