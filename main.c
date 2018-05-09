@@ -47,8 +47,10 @@ int main(int argc, char *argv[])
                             exit(1);
                     }
                     command_check(buf); 
+					GeneratePlayerData(); 
                     //printf("Input buffer: %s\n", buf);
                     break; /* to terminate loop, since I don't process anything */
+					
             }
     }
 
